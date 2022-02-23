@@ -1,0 +1,236 @@
+.btn-refresh-data {
+  padding: 10px 25px;
+  height: 45px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: #000000;
+  font-size: 12px;
+  font-weight: 500;
+  letter-spacing: 0.7px;
+  background: transparent;
+  outline: none !important;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  position: relative;
+  display: inline-block;
+}
+
+.btn-refresh {
+  border: 1px solid rgb(0, 0, 0);
+  z-index: 1;
+  color: rgb(0, 0, 0);
+}
+
+.btn-refresh:after {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 0;
+  bottom: 0;
+  left: 0;
+  z-index: -1;
+  background: rgb(228, 228, 228);
+  transition: all 0.3s ease;
+}
+
+.bbtn-refresh:hover {
+  color: rgb(0, 0, 0);
+}
+
+.btn-refresh:hover:after {
+  top: 0;
+  height: 100%;
+}
+
+.btn-refresh:active {
+  top: 2px;
+}
+
+.btn-request-right {
+  padding: 10px 25px;
+  height: 45px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: #000000;
+  font-size: 12px;
+  font-weight: 500;
+  letter-spacing: 0.7px;
+  background: transparent;
+  outline: none !important;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  position: relative;
+  display: inline-block;
+}
+
+.btn-request-right:disabled,
+.btn-request-right:disabled:hover,
+.btn-request-right:disabled:focus,
+.btn-request-right.disabled:hover,
+.btn-request-right.disabled:focus,
+.btn-request-right[disabled] {
+  border: 1px solid #999999;
+  background-color: #cccccc;
+  color: #666666;
+}
+
+.btn-request {
+  z-index: 1;
+  color: rgb(0, 0, 0);
+  border: 1px solid rgba(0, 0, 0, 0.6);
+}
+
+.btn-request:enabled:after {
+  position: absolute;
+  content: "";
+  width: 0;
+  height: 100%;
+  top: 0;
+  left: 0;
+  direction: rtl;
+  z-index: -1;
+  background: rgb(228, 228, 228);
+  transition: all 0.3s ease;
+}
+
+.btn-request:hover {
+  color: rgb(0, 0, 0);
+}
+
+.btn-request:hover:after {
+  left: auto;
+  right: 0;
+  width: 100%;
+}
+
+.btn-request:active {
+  top: 2px;
+}
+
+.btn-return-left {
+  padding: 10px 25px;
+  height: 45px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: #000000;
+  font-size: 12px;
+  font-weight: 500;
+  letter-spacing: 0.7px;
+  background: transparent;
+  outline: none !important;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  position: relative;
+  display: inline-block;
+}
+
+.btn-return-left:disabled,
+.btn-return-left:disabled:hover,
+.btn-return-left:disabled:focus,
+.btn-return-left.disabled:hover,
+.btn-return-left.disabled:focus,
+.btn-return-left[disabled] {
+  border: 1px solid #999999;
+  background-color: #cccccc;
+  color: #666666;
+}
+
+.btn-return {
+  z-index: 1;
+  color: rgb(0, 0, 0);
+  border: 1px solid rgba(0, 0, 0, 0.6);
+}
+
+.btn-return:enabled:after {
+  position: absolute;
+  content: "";
+  width: 0;
+  height: 100%;
+  top: 0;
+  right: 0;
+  z-index: -1;
+  background: rgb(228, 228, 228);
+  transition: all 0.3s ease;
+}
+
+.btn-return:hover {
+  color: rgb(0, 0, 0);
+}
+
+.btn-return:hover:after {
+  right: auto;
+  left: 0;
+  width: 100%;
+}
+
+.btn-return:active {
+  top: 2px;
+}
+
+.btn-submit-request {
+  position: relative;
+  outline: none;
+  text-decoration: none;
+  border-radius: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  cursor: pointer;
+  text-transform: uppercase;
+  height: 45px;
+  width: 100%;
+  opacity: 1;
+  background-color: #ffffff;
+  border: 1px solid rgba(0, 0, 0, 0.6);
+}
+
+.btn-submit-request .btn-submit-request-span {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: #000000;
+  font-size: 12px;
+  font-weight: 500;
+  letter-spacing: 0.7px;
+}
+
+.btn-submit-request:hover {
+  animation: bn54rotate 0.7s ease-in-out both;
+}
+
+.btn-submit-request:hover .btn-submit-request-span {
+  animation: bn54storm 0.7s ease-in-out both;
+  animation-delay: 0.06s;
+}
+
+@keyframes bn54rotate {
+  0% {
+    transform: rotate(0deg) translate3d(0, 0, 0);
+  }
+  25% {
+    transform: rotate(3deg) translate3d(0, 0, 0);
+  }
+  50% {
+    transform: rotate(-3deg) translate3d(0, 0, 0);
+  }
+  75% {
+    transform: rotate(1deg) translate3d(0, 0, 0);
+  }
+  100% {
+    transform: rotate(0deg) translate3d(0, 0, 0);
+  }
+}
+
+@keyframes bn54storm {
+  0% {
+    transform: translate3d(0, 0, 0) translateZ(0);
+  }
+  25% {
+    transform: translate3d(4px, 0, 0) translateZ(0);
+  }
+  50% {
+    transform: translate3d(-3px, 0, 0) translateZ(0);
+  }
+  75% {
+    transform: translate3d(2px, 0, 0) translateZ(0);
+  }
+  100% {
+    transform: translate3d(0, 0, 0) translateZ(0);
+  }
+}
