@@ -178,13 +178,17 @@ const PhoneTransfer = (props) => {
 
   const submitRemoveZoomPhoneDB = (dataSubmit) => {
     httpClient
-      .delete(server.PHONETRANSFER_URL + "/removePeeringDB", { data : dataSubmit})
+      .delete(server.PHONETRANSFER_URL + "/removePeeringDB", {
+        data: dataSubmit,
+      })
       .then((result) => {
         // console.log(result);
         if (result.data.status) {
           let statusExchange = result.data.status;
           console.log(statusExchange);
-          alert("Remove peering number " + oneUnSelect.phoneNumber + " successful.");
+          alert(
+            "Remove peering number " + oneUnSelect.phoneNumber + " successful."
+          );
           location.reload();
         } else {
           //console.log(result.data);
